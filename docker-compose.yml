@@ -4,6 +4,7 @@ services:
   gym-bot:
     build: .
     container_name: gym-bot
+    network_mode: host
     environment:
       - TELEGRAM_BOT_TOKEN=ВАШ_ТОКЕН_ЗДЕСЬ
       - CHAT_ID=ВАШ_CHAT_ID_ЗДЕСЬ
