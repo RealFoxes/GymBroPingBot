@@ -1,12 +1,12 @@
-version: '3.8'
+version: '3.9'
 
 services:
   gym-bot:
     build: .
     container_name: gym-bot
-    network_mode: host
     environment:
       - TELEGRAM_BOT_TOKEN=ВАШ_ТОКЕН_ЗДЕСЬ
       - CHAT_ID=ВАШ_CHAT_ID_ЗДЕСЬ
-      - START_DATE=2025-03-17  # Укажите нужную стартовую дату в формате YYYY-MM-DD
+      - START_DATE=2025-03-17
+      - TZ=Europe/Moscow
     restart: unless-stopped
